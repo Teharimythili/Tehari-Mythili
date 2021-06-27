@@ -1,0 +1,17 @@
+Program to check whether the number is odd or even by using bitwise operator.
+class number
+{
+public static void main(String args[])
+     {
+      int x=8;
+      if((x&1)!=0)
+  System.out.println("odd");
+else
+   System.out.println("even");
+       }
+}
+
+output:
+D:\tehari>javac oddeven.java
+D:\tehari>java number
+even
