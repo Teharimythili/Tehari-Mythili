@@ -1,0 +1,15 @@
+ Program to swap two numbers without using third variable.
+import java.io.*; 
+class main
+ {
+ public static void main(String[] args)
+    {
+        int a= 33;
+        int b = 82;
+        a=a^b; 
+        b= a^b; 
+        a=a^b; 
+        System.out.println("After swap: a = " + a + ", b = " + b);
+    }
+}
+ output:After swap: a = 82, b = 33
