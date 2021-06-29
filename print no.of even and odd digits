@@ -1,0 +1,29 @@
+program to print number of even  and odd digits for a given number n.
+import java.util.Scanner;
+class main
+ {
+ public static void main(String[] args) 
+{
+    Scanner s=new Scanner(System.in);
+    int num;
+    System.out.println("Enter the number:");
+    num=s.nextInt();
+    int odd=0,even=0;
+    while(num!=0)
+    {
+        int rem=num%10;
+        if(rem%2==1)
+            odd++;
+        else
+            even++;
+        num/=10;
+    }
+    System.out.println("No of even digits = "+even);
+    System.out.println("No of odd digits = "+odd);
+    s.close();
+ }
+}
+Output:Enter the number:
+342891
+No of even digits = 3
+No of odd digits = 3
