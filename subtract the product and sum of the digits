@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+  
+        int p=1;
+        int sum=0;
+        while( n > 0){
+            sum += n % 10;
+            p *= n % 10;
+            n /= 10;
+        }
+        return p-sum;
+    }
+};
+Output:Your input
+234
+Output
+15
+Expected
+15
