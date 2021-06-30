@@ -1,0 +1,38 @@
+import java.util.*;
+class main
+{
+    static int replaceDigit(int n, int x, int y)
+    {
+        int result = 0, multiply = 1;
+ 
+        while (n / 10 > 0)
+        {
+ 
+            int remainder = n % 10;
+ 
+            
+            if (remainder == x)
+                result = result + y * multiply;
+ 
+            else 
+                result = result + remainder * multiply;
+           
+            multiply *= 10;
+            n= n / 10; // update the value
+        }
+ 
+        if (n == x)
+            result = result + y * multiply;
+        else 
+            result = result + n* multiply;
+        return result;
+    }
+    public static void main(String[] args)
+    {
+        int n= 16719, x = 1, y= 8;
+        System.out.println(replaceDigit(n, x, y));
+    }
+}
+Output:86789
+[ n=234278,x=2,y=5;
+    output:534578]
