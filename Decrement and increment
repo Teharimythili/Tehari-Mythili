@@ -1,0 +1,26 @@
+import java.util.*;
+class main
+ {
+public static void main(String[] args)
+       {
+              Scanner sc=new Scanner(System.in);
+	int N=sc.nextInt();
+	if(N%4==0){
+	System.out.println(++N);
+             }
+       else
+           {
+	System.out.println(--N);
+    }
+  }
+}
+Output:
+D:\tehari>java main
+4
+5
+
+D:\tehari>java main
+67
+66
+
+
