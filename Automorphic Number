@@ -1,0 +1,39 @@
+import java.util.*;
+class main 
+{   
+      static boolean isAutomorphic(int num)   
+       {     
+            int n = num* num;   
+           while (num > 0)   
+            {   
+               if (num % 10 != n % 10)   
+              return false;   
+               num = num/10;     
+                n = n/10;   
+              }   
+               return true;   
+          }   
+      public static void main(String args[])   
+     {    
+       int num;
+       Scanner s=new Scanner(System.in);
+        num=s.nextInt();
+       if(isAutomorphic(num))
+            {
+                  System.out.println("isAutomorphic");
+            }
+        else
+            {
+             System.out.println("isNot Automorphic");   
+           }   
+     }  
+}
+
+Output:
+D:\tehari>java main
+625
+isAutomorphic
+
+D:\tehari>java main
+985
+isNot Automorphic
