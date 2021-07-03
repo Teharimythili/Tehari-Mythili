@@ -1,0 +1,55 @@
+	import java.util.*;
+ class Alpha
+{
+  public static char alphabet[] = {'A','B','C','D','E','F','G','K','L','N','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+	
+public static char def(int k)
+    {
+     char result = alphabet[k];
+        return result;
+     }
+         public static void complex(int n) 
+  {
+   for (int i = 1; i <= 2 * n - 1; i++)
+      {
+            System.out.println("  " );
+            for (int j = 1; j <= 2 * n - 1; j++)
+           {
+                for (int k = 1; k<= 2 * n - 1; k++)
+              {
+                   if (((i== k)  ||  ( j== k))  ||  (i== 2 * n - k)  ||  (j == 2 * n - k))
+                         {
+                        System.out.print(def( j - 1 ));
+                        break;
+                         }
+                }
+            }
+        }
+    }
+   public static void main(String[] args)
+        {	 
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+          complex( n );
+        }
+}
+
+Output:
+D:\tehari>java Alpha
+4
+
+ABCDEFG
+ABCDEFG
+ABCDEFG
+ABCDEFG
+ABCDEFG
+ABCDEFG
+ABCDEFG
+D:\tehari>java Alpha
+3
+
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
