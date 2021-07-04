@@ -1,0 +1,62 @@
+import java.util.*;
+ class main 
+{
+     public static char alphabet[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+      public static char defAlpha(int k) 
+       {
+        char result = alphabet[k];
+        return result;
+       }
+ 
+    public static void complex(int n)
+        {
+        for (int i= 1;i<= 2 * n - 1; i++) 
+           {
+            System.out.println();
+            for (int j = 1;j<= 2 * n - 1;j++) 
+               {
+                for(int k=1;k<=2*n-1;k++)
+                 {
+               Output:     if (((i== k) || (j ==k)) || (i == 2 * n - k) || (j == 2 * n - k))
+                   {
+                        System.out.print(defAlpha(k- 1));
+                        break;
+                    } 
+                }
+            }
+        }
+    }
+  public static void main(String[] args) 
+       {    	 
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        main.complex(n);
+       }
+}
+
+Output:D:\tehari>java main
+5
+
+AAAAAAAAA
+ABBBBBBBA
+ABCCCCCBA
+ABCDDDCBA
+ABCDEDCBA
+ABCDDDCBA
+ABCCCCCBA
+ABBBBBBBA
+AAAAAAAAA
+D:\tehari>java main
+3
+
+AAAAA
+ABBBA
+ABCBA
+ABBBA
+AAAAA
+D:\tehari>java main
+2
+
+AAA
+ABA
+AAA
