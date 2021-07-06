@@ -1,0 +1,51 @@
+import java.util.*;
+class main
+{
+public static void main(String[] args)
+    {
+             Scanner s=new Scanner(System.in);
+             System.out.println("enter size of the array: ");
+            int size;
+             size=s.nextInt();
+             int arr[]=new int[size];
+             System.out.println("Enter the elements of array: ");
+              for(int i=0;i<size;i++)
+               {
+               arr[i]=s.nextInt();
+               }
+              int n=0;
+              for(int i=0;i<size;i++)
+              {
+                if(arr[i]!=0)
+                    {
+                   arr[n]=arr[i];
+                    n++;
+                     }
+                }
+               for(int i=n;i<size;i++)
+                  {
+                     arr[i]=0;
+                 }
+             System.out.println("the result is:");
+             for(int i=0;i<size;i++)
+                {
+               System.out.print(arr[i]+ "  ");
+                }
+        }
+}
+Output:
+enter size of the array:
+5
+Enter the elements of array:
+1 2 0 5 0 0 4 3
+the result is:
+1  2  5  0  0
+D:\tehari>java main
+enter size of the array:
+10
+Enter the elements of array:
+1 0 5 6 0 4 3 0 7 0
+the result is:
+1  5  6  4  3  7  0  0  0  0
+D:\tehari>
+        
