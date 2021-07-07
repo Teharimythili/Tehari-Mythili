@@ -1,0 +1,23 @@
+import java.util.*; 
+class main
+{ 
+    public static int array(int arr1[],  int arr2[],int n1, int n2) 
+       { 
+        Arrays.sort(arr1); 
+        Arrays.sort(arr2); 
+        return arr1[n1 - 1] * arr2[0]; 
+        } 
+     public static void main(String argc[]) 
+        { 
+        int [] arr1= new int []{ 3,4,12,2,55,9,39,77,53,35 }; 
+        int [] arr2 = new int []{ 3,65, 16, 64,2, 6, 28,44,56,71 }; 
+        int n1 = 10; 
+        int n2 = 10; 
+        System.out.println(array(arr1,arr2,n1, n2)); 
+       } 
+}
+Output:
+D:\tehari>java main
+154
+[max=77,min=2
+   maX*MIN=77*2=154]
