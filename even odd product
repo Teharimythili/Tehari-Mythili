@@ -1,0 +1,57 @@
+import java.util.*;
+class main
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int n,a=0,b=0;
+  System.out.println("Enter the size:");
+  n=sc.nextInt();
+  int arr[]=new int[n];
+  System.out.println("Enter the elements:");
+  {
+      for(int i=0;i<n;i++)
+      arr[i]=sc.nextInt();
+       for(int i=0;i<n;i++)
+       {
+        if(arr[i]%2==0)
+         {
+          a=a+arr[i];
+         }
+       else
+        {
+          b=b+arr[i];
+        }
+     }
+   }
+  System.out.println("Sum of even number:"+ a );
+  System.out.println("Sum of odd numbers:"+ b );
+  int product=0;
+  product=a*b;
+  if(product%2==0)
+    {
+     System.out.println("Product is even:"+product);
+     }
+  else
+     {
+    System.out.println("Product is odd:"+product);
+     }
+  }
+}
+Output:D:\tehari>java main
+Enter the size:
+10
+Enter the elements:
+1 2 4 55 13 8 64 31 9 10
+Sum of even number:88
+Sum of odd numbers:109
+Product is even:9592
+
+D:\tehari>java main
+Enter the size:
+5
+Enter the elements:
+1 12 54 6 2
+Sum of even number:74
+Sum of odd numbers:1
+Product is even:74
