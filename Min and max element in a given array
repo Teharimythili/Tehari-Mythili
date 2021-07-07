@@ -1,0 +1,31 @@
+import java.util.*;
+class main
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int size,i;
+System.out.print("Enter array size:");
+size=sc.nextInt();
+int ar[];
+ar=new int[size];
+System.out.print("Enter array elements:");
+for(i=0;i<size;i++)
+{
+ar[i]=sc.nextInt();
+}
+Arrays.sort(ar);
+System.out.println("Minimum element is:" +ar[0]);
+System.out.print("Maximum element is:" +ar[size-1]);
+}
+}
+Output:\tehari>java main
+Enter array size:5
+Enter array elements:1 4 6 7 8 9
+Minimum element is:1
+Maximum element is:8
+D:\tehari>java main
+Enter array size:10
+Enter array elements:5 18 23 22 10 22 5 8 39 4 2 55 81 3
+Minimum element is:4
+Maximum element is:39
