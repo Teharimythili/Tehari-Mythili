@@ -1,0 +1,31 @@
+import java.util.*;
+class main
+{
+  public static void main(String[] args) 
+{
+     String str, rev ="";
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter a string:");
+      str=s.nextLine(); 
+      int length = str.length();
+     for ( int i = length - 1; i >= 0; i-- )
+         rev =rev+str.charAt(i);
+      if(str.equals(rev))
+      {
+         System.out.println("given string is a palindrome");
+         }
+      else
+      {
+         System.out.println("given string is not a palindrome");
+        }
+   }
+}
+Output:D:\tehari>java main
+Enter a string:
+343
+given string is a palindrome
+
+D:\tehari>java main
+Enter a string:
+567
+given string is not a palindrome
