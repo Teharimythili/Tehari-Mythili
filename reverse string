@@ -1,0 +1,44 @@
+
+import java.util.*;
+ 
+class main
+  {
+  static void reverseWords(String str)
+     {
+    Stack<Character> st=new Stack<Character>();
+    for (int i = 0; i < str.length(); ++i)
+     {
+        if (str.charAt(i) != ' ')
+            st.push(str.charAt(i));
+        else
+          {
+            while (st.empty() == false) 
+            {
+                System.out.print(st.pop());       
+               }
+            System.out.print(" ");
+                }
+          }
+    while (st.empty() == false) {
+        System.out.print(st.pop());
+         
+      }
+   }
+public static void main(String[] args)
+{
+   String str = "welcome to coding";
+    reverseWords(str);
+  }
+}
+Output:
+D:\tehari>java main
+emoclew ot gnidoc
+
+
+D:\tehari>java main                      [Hello world]
+olleH dlrow
+D:\tehari>javac program1.java
+
+D:\tehari>java main                        [Sun rises in the east]
+nuS sesir ni eht tsae
+D:\tehari>
