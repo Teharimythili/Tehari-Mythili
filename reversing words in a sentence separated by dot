@@ -1,0 +1,28 @@
+import java.io.*;
+
+class main
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter sentence : ");
+        String str = br.readLine();
+
+        String words[] = str.split(" ");
+        System.out.println("Reverse Sentence : ");
+        for (int i = words.length - 1; i >= 0; i--)
+        {
+            System.out.print(words[i] + " .");
+        }
+    }
+}
+Output:D:\tehari>java main
+Enter sentence : sun rises in the east
+Reverse Sentence :
+east .the .in .rises .sun .
+
+D:\tehari>java main
+Enter sentence : i like to do coding
+Reverse Sentence :
+coding .do .to .like .i .
