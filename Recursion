@@ -1,0 +1,26 @@
+import java.util.*;
+ class Recursion 
+{
+  public static void main(String[] arg) 
+     {
+      Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       long fact = multiplyNumbers(n);
+        System.out.println("Fact of " + n+ " = " + fact);
+    }
+    public static long multiplyNumbers(int n)
+    {
+        if (n >= 1)
+            return n * multiplyNumbers(n - 1);
+        else
+            return 1;
+    }
+}
+Output:
+D:\tehari>java Recursion
+8
+Fact of 8 = 40320
+
+D:\tehari>java Recursion
+5
+Fact of 5 = 120
