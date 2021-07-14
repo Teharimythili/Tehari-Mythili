@@ -1,0 +1,28 @@
+class Solution {
+    public int compress(char[] chars) {
+        int i = 0, j = 0;
+        int count = 0;
+        while (j < chars.length) {
+            if (j == chars.length - 1 || chars[j] != chars[j + 1]) {
+                chars[count++] = chars[j];
+                if (j - i + 1 > 1) {
+                    if (j - i + 1 >= 10) {
+                        chars[count++] = (char) ((j - i + 1) / 10 + '0');
+                        chars[count++] = (char) ((j - i + 1) % 10 + '0');
+                    } else
+                        chars[count++] = (char) ((j - i + 1) + '0');
+                }
+
+                j = i = j + 1;
+            } else
+                j++;
+        }
+        return count;
+    }
+}
+Output:Your input
+["a","a","b","b","c","c","c"]
+Output
+["a","2","b","2","c","3"]
+Expected
+["a","2","b","2","c","3"]
