@@ -1,0 +1,21 @@
+import java.util.*; 
+ class main
+ {
+    public static void main(String args[])
+    {
+    ArrayList<String>a1 = new ArrayList<String>();
+      ArrayList<String>a2 = new ArrayList<String>();
+      a1.add(" Red Blue  Green Pink");
+      a2.add(" white  Yellow  Pink");
+  System.out.println("Enter First Array: "+ a1);
+  System.out.println("Enter Second Array: " + a2);
+ a1.addAll(a2);
+        System.out.println("Final List: " + a1);
+    }
+}
+Output:\tehari>javac la2.java
+
+D:\tehari>java main
+Enter First Array: [ Red Blue  Green Pink]
+Enter Second Array: [ white  Yellow  Pink]
+Final List: [ Red Blue  Green Pink,  white  Yellow  Pink]
