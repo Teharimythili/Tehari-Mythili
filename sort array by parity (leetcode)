@@ -1,0 +1,30 @@
+class Solution {
+public int[] sortArrayByParityII(int[] nums)
+{
+    int oddindex = 1;
+   int evenindex = 0;
+   int res[] = new int[nums.length];
+    for (int i = 0; i < nums.length; i++)
+    
+    {
+        if (nums[i]%2==0) {
+            res[evenindex]=nums[i];
+            evenindex+=2;
+        }
+        else
+        {
+            res[oddindex]=nums[i];
+            oddindex+=2;
+        }
+    }
+    return res;
+}
+}
+Output:Accepted
+Runtime: 0 ms
+Your input
+[4,2,5,7]
+Output
+[4,5,2,7]
+Expected
+[4,5,2,7]
