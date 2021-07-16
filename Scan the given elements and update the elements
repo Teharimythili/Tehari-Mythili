@@ -1,0 +1,47 @@
+import java.util.*;
+class main
+{
+public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter n value");
+    int n;
+    ArrayList<Integer>a=new ArrayList<Integer>();
+    n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+    int value;
+    value=sc.nextInt();
+    a.add(value);
+    }
+    System.out.println("Enter value in array update");
+    int key=sc.nextInt();
+    if(a.contains(key))
+    System.out.println("True");
+   else
+    System.out.println("Flase");
+    a.set(1, 99);
+    System.out.println(a);
+   }
+}
+Output:
+
+D:\tehari>java main           [1]
+Enter n value
+5
+10 20 30 40 50
+Enter value in array update
+20
+True
+[10, 99, 30, 40, 50]
+
+
+Enter n value                        [2]
+5
+10 20 30 40 50
+Enter value in array update
+2
+Flase
+[10, 99, 30, 40, 50]
+
+
