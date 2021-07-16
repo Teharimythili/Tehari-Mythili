@@ -1,0 +1,46 @@
+import java.util.*;
+class main
+{
+public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+      System.out.println("Enter n value");
+      int n;
+     ArrayList<Integer>a=new ArrayList<Integer>();
+      n=sc.nextInt();
+     for(int i=0;i<n;i++)
+      {
+      int value;
+      value=sc.nextInt();
+      a.add(value);
+     }
+     System.out.println("Enter value to search");
+     int k=sc.nextInt();
+      if(a.contains(k))
+          {
+          a.remove(Integer.valueOf(k));
+          System.out.println( a);
+        }
+      else
+         {
+          System.out.println("Element Not Found");
+         }
+    }
+}
+
+Output:
+D:\tehari>java main          [1]
+Enter n value
+5
+10 20 30 40 50
+Enter value to search
+30
+[10, 20, 40, 50]
+
+D:\tehari>java main              [2]
+Enter n value
+5
+10 20 30 40 50
+Enter value to search
+3
+Element Not Found
