@@ -1,0 +1,52 @@
+import java.util.*;
+class main
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x=new LinkedList<Integer>();
+int n,ch;
+do
+{
+System.out.println("1.Begin Insert \n 2.End Insert\n 3.Position Insert\n 4.Besing Delete\n  5.End Delete\n 6.Position Delete\n 7.Display \n 8.Exit\n.....Enter your Choice:");
+ch=sc.nextInt();
+switch(ch)
+{
+case 1: System.out.println("Enter n value");
+n=sc.nextInt();
+x.addFirst(n);
+break;
+case 2: System.out.println("Enter n value");
+n=sc.nextInt();
+x.addLast(n);
+break;
+case 3: System.out.println(x);
+default: System.out.println("Invalid Choice");
+}
+System.out.println("1.Begin Insert\n 2.End Insert \n 3.Position Insert\n 4.Besing Delete\n 5.End Delete\n 6.Position Delete\n.7.Display \n 8.Exit\n.....Enter your Choice:");
+ch=sc.nextInt();
+}while(ch<8);
+}
+}
+
+Output:D:\tehari>java main
+1.Begin Insert
+ 2.End Insert
+ 3.Position Insert
+ 4.Besing Delete
+  5.End Delete
+ 6.Position Delete
+ 7.Display
+ 8.Exit
+.....Enter your Choice:
+2
+Enter n value
+20
+1.Begin Insert
+ 2.End Insert
+ 3.Position Insert
+ 4.Besing Delete
+ 5.End Delete
+ 6.Position Delete
+.7.Display
+ 8.Exit
