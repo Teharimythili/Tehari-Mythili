@@ -1,0 +1,17 @@
+import java.util.*;
+class main
+{
+  public static void main(String[] args)
+   {
+     TreeMap<Integer,String>h=new TreeMap<Integer,String>();
+     h.put(5,"John");
+      h.put(1,"Sam");
+     h.put(7,"Kim");
+    System.out.print(h); 
+  }
+}
+Output:
+D:\tehari>java main
+{1=Sam, 5=John, 7=Kim}
+
+
