@@ -1,0 +1,41 @@
+import java.util.*;
+ class put
+  {
+      public static void main(String[] args)
+         {
+            Scanner sc=new Scanner(System.in);
+            HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
+           System.out.println("a=");
+           int[] ar=new int[10];
+            for(int i=0;i<ar.length;i++) 
+               {
+                 ar[i]=sc.nextInt();
+             }
+          int count=0;
+          int n=0;
+           for(Integer i:ar) 
+        {
+           if(i%5==0)
+                {
+                count++;
+               }
+	    
+          if(i%3==0) 
+             {
+                n++;
+             }
+         }
+	 
+        x.put(5,count);
+        x.put(3,n);	
+         System.out.println(x);	
+    }
+  }
+Output:
+D:\tehari>javac hashmapdiv.java
+
+D:\tehari>java put
+a=
+12 5 10 20 9 3 6 7 8 11
+{3=4, 5=3}
+
