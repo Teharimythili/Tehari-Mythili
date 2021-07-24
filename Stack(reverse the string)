@@ -1,0 +1,28 @@
+import java.util.*;
+class main
+{
+	public static void main(String[] args)
+  {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		Stack<Character> x=new Stack<Character>();
+		char[] ch=s.toCharArray();
+		int i;
+		for(i=0;i<ch.length;i++)
+     {
+		    x.push(ch[i]);
+	  }
+		for(i=0;i<ch.length;i++)
+       {
+		     ch[i]=x.pop();
+		   }
+    System.out.print(String.valueOf(ch));
+   }
+}
+Output:
+D:\tehari>java main
+ADITYA
+AYTIDA
+2.D:\tehari>java main
+Welcome
+emocleW
