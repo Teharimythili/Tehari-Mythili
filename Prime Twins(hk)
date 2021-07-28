@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    private static boolean isPrime(int n) 
+    {
+        
+        if (n == 1 || n%2==0) return false;
+        
+        for(int i=3;i*i<=n;i+=2)
+         {
+            if(n%i==0)
+                return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args)
+     {
+       
+        Scanner scan = new Scanner(System.in);
+        int min = scan.nextInt();
+        int max = scan.nextInt();
+        ArrayList<Integer> primes = new ArrayList(max-min);
+        for (int i = min; i <= max; ++i)
+        {
+            if (isPrime(i))
+            {
+                primes.add(i);
+            }
+        }
+        
+        int count = 0;
+        for (int i = 0; i < primes.size()-1; ++i)
+        {
+            int first = primes.get(i);
+            int second = primes.get(i+1);
+            if (second - first == 2)
+            {
+                ++count;
+            }
+        }
+        System.out.println(count);
+        
+    }
+}
+Output:Compiler Message
+Success
+Input (stdin)
+3 13
+Expected Output
+3
