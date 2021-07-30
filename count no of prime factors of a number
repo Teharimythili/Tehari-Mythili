@@ -1,0 +1,36 @@
+import java.util.*;
+class main
+ {
+
+	public static void main(String[] args)
+   {
+      System.out.print("Enter Number:");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int count=0;
+		
+		while(n%2==0)
+    { 
+			count++;   
+		    n/=2;       
+		}
+		for(int i=3;i<=Math.sqrt(n);i+=2) 
+    {
+			while(n%i==0) 
+      {
+				count++;
+		        n=n/i;
+			}
+		}
+	    if(n>2) 
+      {
+	    	count++;
+	    }System.out.print(count);
+	}
+
+}
+Output:
+D:\tehari>java main
+Enter Number:
+30
+3
