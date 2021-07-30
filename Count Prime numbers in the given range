@@ -1,0 +1,38 @@
+import java.util.*;
+class main
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int start,end,i,j,Count=0;
+boolean prime;
+System.out.print("Enter start range:");
+start=sc.nextInt();
+System.out.print("Enter end range:");
+end=sc.nextInt();
+for(i=start;i<=end;i++)
+{
+prime=true;
+   for(j=2;j<=i/2;j++)
+   {
+    if((i%j)==0)
+{
+prime=false;
+break ;
+}
+}
+if(prime==true)
+{
+Count++;
+}
+}
+System.out.print("prime numbers in the range:"+Count);
+}
+}
+
+Output:
+D:\tehari>java main
+Enter start range:10
+Enter end range:50
+prime numbers in the range:11
+
