@@ -1,0 +1,21 @@
+class main
+{
+   public static void main(String args[])
+   {
+      int i,key=4;
+      int a[]={1,4,7,9,4,6,10};     
+      for (i= 0; i < a.length; i++)
+      {
+         if (a[i] == key) 
+         {
+           System.out.println(key+" is present "+(i+1));
+           break;
+         }
+      }
+      if (i == a.length)
+        System.out.println(key + " doesn't exist ");
+   }
+}
+Output:
+D:\tehari>java main
+4 is present 2
