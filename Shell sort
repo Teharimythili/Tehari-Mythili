@@ -1,0 +1,57 @@
+import java.util.*;  
+ class Sort
+{  
+static void shellsort(int[] arr, int num)    
+{    
+int i, j, k, tmp;    
+for (i = num / 2; i> 0; i = i / 2)    
+{    
+for (j = i; j<num; j++)    
+{    
+for(k = j - i; k>= 0; k = k - i)    
+{    
+if (arr[k+i] >= arr[k])    
+break;    
+else  
+{    
+tmp = arr[k];    
+arr[k] = arr[k+i];    
+arr[k+i] = tmp;    
+}    
+}    
+}    
+}    
+}     
+public static void main(String[] args)   
+{    
+Scanner sc = new Scanner(System.in);  
+int arr[]= new int[30];    
+int k,  num;    
+System.out.print("Enter total no. of elements : ");      
+num = sc.nextInt();  
+for (k =  0 ; k<num; k++)    
+{    
+arr[k]=sc.nextInt();    
+}    
+shellsort(arr, num);    
+System.out.print("\n Sorted array is: ");    
+for (k = 0; k<num; k++)    
+System.out.println(arr[k]);    
+}    
+}  
+
+Output:
+D:\tehari>java Sort
+Enter total no. of elements : 10
+1 65 77 4 67 99 3 7 19 20
+
+ Sorted array is: 1
+3
+4
+7
+19
+20
+65
+67
+77
+99
