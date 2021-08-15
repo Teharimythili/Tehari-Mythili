@@ -1,0 +1,29 @@
+import java.util.*;
+class main 
+{
+      static void MulTable(int N, int n)
+	{
+		if (n > 10)
+			return ;
+		System.out.println( +  N * n);
+		MulTable(N,  n+ 1);
+	}
+	public static void main (String[] args)
+	{
+		int N = 5;
+		MulTable(N, 1);
+	}
+}
+
+Output:
+D:\tehari>java main
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
